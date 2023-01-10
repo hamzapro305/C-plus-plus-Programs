@@ -1,0 +1,3 @@
+/home/hsnotebook/Documents/CPP/Clock/build/CMakeFiles/Clock.dir
+/home/hsnotebook/Documents/CPP/Clock/build/CMakeFiles/edit_cache.dir
+/home/hsnotebook/Documents/CPP/Clock/build/CMakeFiles/rebuild_cache.dir

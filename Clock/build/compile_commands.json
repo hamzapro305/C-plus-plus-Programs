@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/hsnotebook/Documents/CPP/Clock/build",
+  "command": "/usr/bin/g++  -isystem /usr/include/opencv4 -g -o CMakeFiles/Clock.dir/main.cpp.o -c /home/hsnotebook/Documents/CPP/Clock/main.cpp",
+  "file": "/home/hsnotebook/Documents/CPP/Clock/main.cpp"
+}
+]
