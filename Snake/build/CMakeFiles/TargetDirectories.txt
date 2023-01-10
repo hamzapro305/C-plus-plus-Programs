@@ -1,3 +1,0 @@
-/home/hsnotebook/Documents/CPP/Snake/build/CMakeFiles/Video-Edges.dir
-/home/hsnotebook/Documents/CPP/Snake/build/CMakeFiles/edit_cache.dir
-/home/hsnotebook/Documents/CPP/Snake/build/CMakeFiles/rebuild_cache.dir
