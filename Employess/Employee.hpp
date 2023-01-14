@@ -42,7 +42,7 @@ public:
     std::string GetEmployee()
     {
         std::stringstream ss;
-        ss << this->getId() << "," << this->getName() << "," << this->getAge() << "," << this->getSalary();
+        ss << this->getId() << " " << this->getName() << " " << this->getAge() << " " << this->getSalary();
         return ss.str();
     }
 };
