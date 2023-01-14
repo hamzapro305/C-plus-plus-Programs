@@ -1,6 +1,5 @@
 #include <iostream>
 #include <sstream>
-
 class Employee
 {
 private:
@@ -11,13 +10,15 @@ private:
 
 public:
     Employee() {}
-    Employee(std::string Name, std::string Id, float Salary, int Age) {
+    Employee(std::string Name, std::string Id, float Salary, int Age)
+    {
         this->Name = Name;
         this->Salary = Salary;
         this->Age = Age;
         this->Id = Id;
     }
-    Employee(const Employee& EMP) {
+    Employee(const Employee &EMP)
+    {
         this->Name = EMP.Name;
         this->Salary = EMP.Salary;
         this->Age = EMP.Age;
@@ -32,7 +33,8 @@ public:
     void setSalary(float Salary) { this->Salary = Salary; }
     void setAge(int Age) { this->Age = Age; }
     void setId(std::string Id) { this->Id = Id; }
-    void CopyEmployee(Employee *EMP) {
+    void CopyEmployee(Employee *EMP)
+    {
         this->Name = EMP->Name;
         this->Salary = EMP->Salary;
         this->Age = EMP->Age;
@@ -45,26 +47,30 @@ public:
     }
 };
 
-std::ostream& operator << (std::ostream& ss, const Employee &obj){
-        ss << "Name: " << std::left;
-        if (obj.getName().length() > 20){
-            ss.width(16);
-            ss << obj.getName().substr(0, 16);
-            ss.width(4);
-            ss << std::left << "...   ";
-        }
-        else{
-            ss.width(20);
-            ss << obj.getName() << "  ";
-        }
-        ss << "ID: " << std::left;
-        ss.width(5);
-        ss << obj.getId() << "  ";
-        ss << "Age: " << std::left;
+std::ostream &operator<<(std::ostream &ss, const Employee &obj)
+{
+    ss << "Name: " << std::left;
+    if (obj.getName().length() > 20)
+    {
+        ss.width(16);
+        ss << obj.getName().substr(0, 16);
         ss.width(4);
-        ss << obj.getAge() << "  ";
-        ss << "Salary: " << std::left;
-        ss.width(40);
-        ss << obj.getSalary() << std::endl;
-        return ss;
+        ss << std::left << "...   ";
+    }
+    else
+    {
+        ss.width(20);
+        ss << obj.getName() << "  ";
+    }
+    ss << "ID: " << std::left;
+    ss.width(5);
+    ss << obj.getId() << "  ";
+    ss << "Age: " << std::left;
+    ss.width(4);
+    ss << obj.getAge() << "  ";
+    ss << "Salary: " << std::left;
+    ss.width(40);
+    ss << obj.getSalary() << std::endl;
+    return ss;
 }
+
