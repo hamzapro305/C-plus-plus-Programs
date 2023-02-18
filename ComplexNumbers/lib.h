@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 
 class Complex{
     private:
@@ -44,10 +45,10 @@ class Complex{
         Complex res(NewReal, NewImaginary);
         return res;
     }
-    float operator [] (int i) {
+    auto operator [] (int i) {
         if(i == 0) return this->real_part;
         else if(i == 1) return this->imaginary_part;
-        else return 0;
+        else throw std::invalid_argument("For Real Part Argument must be 0 or for imaginary part it's must be 1");
     }
 
     std::string GetInfo(){
